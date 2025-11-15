@@ -11,27 +11,49 @@
             <li><a href="../html/projects.html">Projrcts</a></li>
         </ul></nav>
             <form method ="POST">
+                
+                <div class="container">
+                     <div class="field">
+                <label for="firstname"> First Name : </label> 
+               <input type="text" name="firstname" required ></div>
+                
+               <div class="field"> 
+                <label for="lastname"> Last Name : </label>
+                <input type="text" name="lastname" required></div>
 
-                First Name : <input type="text" name="firstname" required ><br>
-                Last Name : <input type="text" name="lastname" required><br>
-                Email : <input type="email" name="email" required><br>
-                Company : <input type="text" name="company"><br><br>
-                Reason for contact : <br>
+                <div class="field"> 
+                   <label for="email"> Email : </label>
+                   <input type="email" name="email" required><br></div>
+
+                <div class="field">    
+                <label for="company">Company : </label>
+                <input type="text" name="company"></div>
+                <br>
+                <div class="field"> 
+                   <label for="rfc"> Reason for contact : </label>
+                   <div class="radio">
                 <input type="radio" name="rfc" required>Project<br>
                 <input type="radio" name="rfc" required>Thesis<br>
-                <input type="radio" name="rfc" required>Project<br><br>
-                3 services I can provide : <br>
+                <input type="radio" name="rfc" required>Project<br></div></div>
+
+                <div class="field"> 
+                   <label for="chb"> 3 services I can provide : </label> <br>
+                   <div class="checkbox">
                 <input type="checkbox" name="chb" >Web development<br>
                 <input type="checkbox" name="chb" >Mobile app<br>
                 <input type="checkbox" name="chb" >Graphic designing<br>
-                <input type="checkbox" name="chb" >Cyber Security<br>
+                <input type="checkbox" name="chb" >Cyber Security<br></div></div>
                 <br>
-                Book an appoinment<br>
-                <input type="date" required><br>
-                <br>
-                <input type="submit" value="Book Now" required>
-                <input type="reset" value="Reset">
 
+                <div class="field">
+                <label for="date"> Book an appoinment </label><br>
+                <input type="date" value="dd-mm-yyyy" required></div>
+                <br>
+                <div class="btn">
+                    
+                <input type="submit" value="Book Now" required>
+                <input type="reset" value="Reset"></div>
+                </div>
             </form>
         </body>
     </head>

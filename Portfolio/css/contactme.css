@@ -1,9 +1,63 @@
+nav {
+  display: flex; 
+  justify-content: center;
+}
+
+
 form{
-padding: 10px;
-}
+  padding: 5px 0px 5px;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+
+/* form label {
+  width: 120px;
+} */
 .text{
-    padding: 3px;
+    
+    padding: 10px 0px 10px;
 }
+.container{
+  
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.field label {
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: right;
+}
+.field {
+  padding: 5px 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.radio {
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.radio input {
+  text-align: center;
+}
+.checkbox{
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+.btn{
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 body {
     background-color: rgb(227, 201, 243);
 }
@@ -13,22 +67,25 @@ h2{
     text-align: center;
 }
 input[type=text] {
-  width: 50%;
-  padding: 12px;
+  
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
   margin: 10px 0;
   border: 2px solid rgb(47, 0, 255);
   border-radius: 8px;
- ;
+ 
 }
 
   input[type=email] {
-  width: 50%;
-  padding: 12px;
+  display: 50%;
+  justify-content: center;
+  padding: 10px;
   margin: 10px 0;
   border: 2px solid rgb(47, 0, 255);
   border-radius: 8px;
 }
-ul li{
+nav li{
   list-style-type: none;
   display:inline;
   margin: 1px;
